@@ -1,0 +1,9 @@
+select 
+f.title as title, f.rental_rate as price, f.rating, c.name as category, count(r.rental_id) as rental 
+from film f
+inner join film_category fc on f.film_id = fc.film_id 
+inner join category c on fc.category_id = c.category_id 
+inner join inventory i on f.film_id = i.film_id 
+inner join rental r on i.inventory_id = r.inventory_id
+group by f.title, f.rental_rate, f.rating, c.name 
+limit 100;
