@@ -12,7 +12,7 @@
     "build": "cd client && npm run build"
   },
   "engines": {
-    "node": "18.x"
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC",
