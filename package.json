@@ -4,7 +4,7 @@
   "description": "React, node et Mysql",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "watch": "nodemon server.js",
     "client": "cd client && npm start",
     "install-client": "cd client && npm install",
@@ -12,7 +12,7 @@
     "build": "cd client && npm run build"
   },
   "engines": {
-    "node": "18.16.0"
+    "node": "18.x"
   },
   "author": "",
   "license": "ISC",
