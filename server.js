@@ -80,7 +80,8 @@ app.get('/*', (req, res) => {
 // Close the connection when the server is shut down
 app.on('close', () => {
   connection.end();
-})
+});
+
 app.listen(PORT, () => {
   console.log(`le serveur est lancé sur le port : ${PORT}`);
 });
