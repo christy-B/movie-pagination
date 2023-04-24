@@ -4,7 +4,7 @@
   "description": "React, node et Mysql",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "watch": "nodemon server.js",
     "client": "cd client && npm start",
     "install-client": "cd client && npm install",
